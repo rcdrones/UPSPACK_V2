@@ -1,61 +1,17 @@
 #!/usr/bin/python3
 
+from upspackv2 import *
 import tkinter as tk
 import re
 import serial
 import time
 
-ser  = serial.Serial("/dev/ttyAMA0",9600)
 
-def get_data():
-    while True:
-        count = ser.inWaiting()
-        
-        if count !=0:
-            recv = ser.read(100)
-##            recv_string = recv.decode(encoding='utf-8')
-            
-##            print("----------")
-##            print(recv)
-##            print("----------")
-            return recv
-        
-
-def decode_uart():
-    uart_string = get_data()
-#    print(uart_string)
-    
-    data = uart_string.decode('ascii','ignore')
-#    print(data)
-    pattern = r'\$ (.*?) \$'
-    result = re.findall(pattern,data,re.S)
-    
-    tmp = result[0]
-    
-    pattern = r'SmartUPS (.*?),'
-    version = re.findall(pattern,tmp)
-    
-    pattern = r',Vin (.*?),'
-    vin = re.findall(pattern,tmp)
-    
-    pattern = r'BATCAP (.*?),'
-    batcap = re.findall(pattern,tmp)
-    
-    pattern = r',Vout (.*)'
-    vout = re.findall(pattern,tmp)
-    
-#    print(version)
-#    print(vin)
-#    print(batcap)
-#    print(vout)
-    
-    return version[0],vin[0],batcap[0],vout[0]
-
-
+test = UPS2("/dev/ttyAMA0")
 
 
 def reflash_data():
-    version,vin,batcap,vout = decode_uart()
+    version,vin,batcap,vout = test.decode_uart()
 #    loc_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
     cur_time = time.time()
     cur_time = cur_time - load_time
@@ -108,7 +64,7 @@ vin_var = tk.StringVar()
 vout_var = tk.StringVar()
 cap_var = tk.StringVar()
 
-version,vin,batcap,vout = decode_uart()
+version,vin,batcap,vout = test.decode_uart()
 ver_var.set("Smart UPS "+version)
 
 ver_lable = tk.Label( window,
