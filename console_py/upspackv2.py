@@ -2,6 +2,9 @@
 
 import serial
 import re
+import RPi.GPIO as GPIO
+import os,sys
+import time
 
 class UPS2:
     def __init__(self,port):
@@ -38,6 +41,29 @@ class UPS2:
         self.vout = re.findall(self.pattern,self.tmp)
 
         return self.version[0],self.vin[0],self.batcap[0],self.vout[0]
+    
+class UPS2_IO:
+    def __init__(self,bcm_io=18):
+        self.shutdown_check_pin = bcm_io
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(self.shutdown_check_pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+        GPIO.add_event_detect(self.shutdown_check_pin, GPIO.FALLING, callback= self.RPI_shutdown,bouncetime=1000)
+
+
+    def RPI_shutdown(self,channel):
+        print("detect bat LOW, system will shutdown in 10s!")
+        for i in range(10,0,-1):
+            print(i,end = ' ',flush=True)
+            time.sleep(1)
+            
+        print("\nexecute System shudown!\n")
+        os.system("sudo shutdown -t now")
+        sys.exit()
+    
+
+    def cleanup():
+        print("clean up GPIO.")
+        GPIO.cleanup() 
 
 
 

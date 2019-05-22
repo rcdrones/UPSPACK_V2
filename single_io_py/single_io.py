@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import time
-from ups2_io import *
+from upspackv2 import *
 
 
 
