@@ -20,8 +20,10 @@ single_io_py文件夹是利用树莓派任意GPIO口（默认为GPIO_18）接UPS
 
 ### 预先配置串口
 树莓派和UPS，通过串口相连。需要确保串口0正确激活，并且正确指向GPIO口上。可用命令ls -l /dev 进行查看，如果看下和下图一样，即表示正确。
+
 ![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/14.png)
-如果没有配置，请查看如下：[教程][uart_config]。
-[uart_config]: https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/config_uart.md ""
+
+如果没有配置，请查看如下：[教程](https://github.com/rcdrones/UPSPACK_V2/blob/master/doc/config_uart.md)。
+
 
 ## 购买途径
