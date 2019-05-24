@@ -1,6 +1,6 @@
 # UPSPack V2 产品软硬件使用指南
 
-![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/ups.jpg)
+![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/ups.JPG)
 
 ## 硬件资料
 
