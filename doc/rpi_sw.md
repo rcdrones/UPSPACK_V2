@@ -25,3 +25,12 @@ cd GUI_py/
 
 ## UPS库函数介绍：
 
+![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/sw4.png)
+```python
+from upspackv2 import *  #加载UPS库
+
+test = UPS2("/dev/ttyAMA0") 	#建议一个UPS的对象，把实际的端口传给UPS。
+
+version,vin,batcap,vout = test.decode_uart()   #得到软件版本，输入电压是否正常、电池电量、输出电压
+
+```
