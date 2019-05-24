@@ -25,13 +25,16 @@
 
 ![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/console.png)
 
-### 预先配置串口
-树莓派和UPS，通过串口相连。需要确保串口0正确激活，并且正确指向GPIO口上。可用命令ls -l /dev 进行查看，如果看下和下图一样，即表示正确。
+## 软件教学：
+* 树莓派和UPS，通过串口相连。需要确保串口0正确激活，并且正确指向GPIO口上。可用命令ls -l /dev 进行查看，如果看下和下图一样，即表示正确。
 
 ![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/14.png)
 
 如果没有配置，请查看如下：[教程](https://github.com/rcdrones/UPSPACK_V2/blob/master/doc/config_uart.md)。
 
-### python demo程序使用教程
+* 下载代码库，并运行。[教程](https://github.com/rcdrones/UPSPACK_V2/blob/master/doc/config_uart.md)
+
 
 ## 购买途径
+* [Amazon]()
+
