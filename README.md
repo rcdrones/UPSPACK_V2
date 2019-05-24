@@ -32,7 +32,7 @@ UPS python基于Python3开发，我们把UPS的数据包协议解析、IO口探�
 
 如果和上图不一致，请查看如下：[教程](https://github.com/rcdrones/UPSPACK_V2/blob/master/doc/config_uart.md)。
 
-* 下载代码库，并运行。[教程](https://github.com/rcdrones/UPSPACK_V2/blob/master/doc/config_uart.md)
+* 下载代码库，并运行。[教程](https://github.com/rcdrones/UPSPACK_V2/blob/master/doc/rpi_sw.md)
 
 
 ## 购买途径
