@@ -52,6 +52,14 @@ class UPS2_IO:
 
     def RPI_shutdown(self,channel):
         print("detect bat LOW, system will shutdown in 10s!")
+
+        cur_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+
+        stop_time = "\nHalt time :"+cur_time
+    
+        with open("log.txt","a+") as f:
+            f.write(stop_time)
+
         for i in range(10,0,-1):
             print(i,end = ' ',flush=True)
             time.sleep(1)
