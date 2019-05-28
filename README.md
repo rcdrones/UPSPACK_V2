@@ -35,7 +35,8 @@ UPS python基于Python3开发，我们把UPS的数据包协议解析、IO口探�
 * 下载代码库，并运行。[教程](https://github.com/rcdrones/UPSPACK_V2/blob/master/doc/rpi_sw.md)
 
 
-## 购买途径
-* [Amazon]()
+## 合作伙伴
+* [Amazon](https://www.amazon.com/MakerFocus-Raspberry-Standard-Expansion-Cellphone/dp/B01LAEX7J0)
 * [![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/RICELEE.jpg)](https://ricelee.com/product/raspberry-pi-ups-lithium-battery-expansion-board)
+* If you will like be partnership with us , contact us via email: rcdrones#163.com (# -> @)
 
