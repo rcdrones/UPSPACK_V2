@@ -5,6 +5,10 @@ import re
 import RPi.GPIO as GPIO
 import os,sys
 import time
+from send_mail import *
+
+use_alert_mail = 0
+test_mail = sendEmail("xxx@xxx.com","password","xxx","smtp.xxx.com")
 
 class UPS2:
     def __init__(self,port):
@@ -59,7 +63,10 @@ class UPS2_IO:
     
         with open("log.txt","a+") as f:
             f.write(stop_time)
-
+        
+        if(use_alert_mail == 1):
+            test_mail.send_alert();
+        
         for i in range(10,0,-1):
             print(i,end = ' ',flush=True)
             time.sleep(1)
