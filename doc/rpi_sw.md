@@ -29,7 +29,7 @@ cd GUI_py/
 ```python
 from upspackv2 import *  #加载UPS库
 
-test = UPS2("/dev/ttyAMA0") 	#建议一个UPS的对象，把实际的端口传给UPS。
+test = UPS2("/dev/ttyAMA0") 	#建立一个UPS的对象，把实际的端口传给UPS。
 
 version,vin,batcap,vout = test.decode_uart()   #得到软件版本，输入电压是否正常、电池电量、输出电压
 

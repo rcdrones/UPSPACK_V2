@@ -8,7 +8,7 @@ import time
 from send_mail import *
 
 use_alert_mail = 0
-test_mail = sendEmail("xxx@xxx.com","password","xxx","smtp.xxx.com")
+test_mail = sendEmail("xxx@xxx.com","xxx","xxx@xxx.com","smtp.xxx.com")
 
 class UPS2:
     def __init__(self,port):

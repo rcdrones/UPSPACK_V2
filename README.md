@@ -25,6 +25,11 @@ UPS python基于Python3开发，我们把UPS的数据包协议解析、IO口探�
 
 ![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/single.png)
 
+* email警报功能：在UPS关机的时候把email发送到可设置的地址上。[教程](https://github.com/rcdrones/UPSPACK_V2/blob/master/doc/config_email_alert.md)
+
+![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/mail1.png)
+
+
 ## 软件教学：
 * 树莓派和UPS，通过串口相连。需要确保串口0正确激活，并且正确指向GPIO口上。可用命令ls -l /dev 进行查看，如果看到和下图一样，即表示配置正确，可跳过这一步。
 
