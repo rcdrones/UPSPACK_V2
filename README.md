@@ -37,5 +37,5 @@ UPS python基于Python3开发，我们把UPS的数据包协议解析、IO口探�
 
 ## 购买途径
 * [Amazon]()
-* ![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/RICELEE.jpg)[RICELEE](https://ricelee.com/product/raspberry-pi-ups-lithium-battery-expansion-board)
+* [![](https://github.com/rcdrones/UPSPACK_V2/raw/master/doc/img/RICELEE.jpg)](https://ricelee.com/product/raspberry-pi-ups-lithium-battery-expansion-board)
 
