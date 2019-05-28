@@ -35,6 +35,13 @@ def reflash_data():
                   
     if batcap_int< 30:
         cap_lable.config(bg = "red")
+        if batcap_int == 1:
+            cur_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+            stop_time = "\nHalt time :"+cur_time
+            with open("log.txt","a+") as f:
+                f.write(stop_time)
+            os.system("sudo shutdown -t now")
+            sys.exit()            
     else:
         cap_lable.config(bg = "green")
     
@@ -53,6 +60,11 @@ def hit_exit():
 #print(loc_time) 
 load_time = time.time()
 
+cur_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+start_time = "\nStart time :"+cur_time
+
+with open("log.txt","a+") as f:
+    f.write(start_time)
 
 window = tk.Tk()
 window.title("UPS GUI demo")
