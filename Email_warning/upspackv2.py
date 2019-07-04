@@ -5,7 +5,10 @@ import re
 import RPi.GPIO as GPIO
 import os,sys
 import time
+from send_mail import *
 
+use_alert_mail = 0
+test_mail = sendEmail("xxx@xxx.com","xxx","xxx@xxx.com","smtp.xxx.com")
 
 class UPS2:
     def __init__(self,port):
@@ -61,6 +64,9 @@ class UPS2_IO:
         with open("log.txt","a+") as f:
             f.write(stop_time)
         
+        if(use_alert_mail == 1):
+            test_mail.send_alert();
+        
         for i in range(10,0,-1):
             print(i,end = ' ',flush=True)
             time.sleep(1)
@@ -78,32 +84,7 @@ class UPS2_IO:
 
 if __name__ == "__main__":
     print("This is UPS v2 class file")
-#    test = UPS2("/dev/ttyAMA0")
-#    version,vin,batcap,vout = test.decode_uart()
-#    print("--------------------------------")
-#    print("       UPS Version:"+version)
-#    print("--------------------------------")
-#    
-#    i = 1
-#    
-#    while True:
-#        version,vin,batcap,vout = test.decode_uart()
-#        
-#        print("-%s-" %i)
-#        
-#        if vin == "NG":
-#            print("USB input adapter : NOT connected!")
-#        else:
-#            print("USB input adapter : connected!")
-#        print("Battery Capacity: "+batcap+"%")
-#        print("UPS Output Voltage: "+vout+" mV")
-#        print("\n")
-#        
-#        i = i+1
-#        
-#        if i == 10000:
-#            i = 1
-   
+
         
         
     
