@@ -35,12 +35,12 @@ UPSPack V2是在UPSPack V1版本的基础上，增加了UPS主板和树莓派主
 8. UPS板载自恢复保险丝，并且3款电池内部分别自带锂电池保护板。防止过充和过放。 
 
 
-### 机械尺寸
+### 机械尺寸  
 UPSPack V2和树莓派4代/3代的机械孔径和位置是一致的。所以可以直接用M2.5铜柱安装在Pi4（Pi3）主板上。
 
 
 ## 产品使用指南
-![](https://github.com/rcdrones/UPSPACK_V2/wiki/images/wire.JPG)
+![](https://github.com/rcdrones/UPSPACK_V2/wiki/images/wire.JPG)  
 进入[Wiki](https://github.com/rcdrones/upspack_v2/wiki)进行学习
 
 
