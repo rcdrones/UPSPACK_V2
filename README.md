@@ -1,6 +1,6 @@
 ﻿# UPSPack V2 产品软硬件使用指南
 
-![](https://github.com/rcdrones/UPSPACK_V2/raw/master/images/ups.JPG)
+![](https://github.com/rcdrones/UPSPACK_V2/wiki/images/ups.JPG)
 
 ## 产品介绍
 树莓派是一款SBC主板，本身和台式Linux电脑的应用很相近。所有的系统都跑带自带的TF存储卡上。但是当外部突然断电时，TF卡上的系统数据(或者用户数据)面临丢失的可能，从而导致系统无法启动的恶果。此外树莓派由于本身体积较小，在便携式应用中，就需要一个合适的移动电源对树莓派进行供电。基于以上的考虑，RPi Club设计了这款UPSPack V2的产品，你可以把它当作移动电源来使用，亦可以当作树莓派的不间断供电电源来使用。除此以外，V2版本提供了串口通讯，和单IO通讯的接口，可以和树莓派主板进行信息交互。让跑在Linux系统之上的软件可以得知UPS上几乎所有硬件/电池信息。从而决策关机的时间点，亦可向云端报告外部供电异常等信息。
@@ -40,6 +40,7 @@ UPSPack V2和树莓派4代/3代的机械孔径和位置是一致的。所以可�
 
 
 ## 产品使用指南
+![](https://github.com/rcdrones/UPSPACK_V2/wiki/images/wire.JPG)
 进入[Wiki](https://github.com/rcdrones/upspack_v2/wiki)进行学习
 
 
