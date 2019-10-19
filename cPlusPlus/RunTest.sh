@@ -1,0 +1,4 @@
+cmake .
+make
+sudo ./PowerTest
+
