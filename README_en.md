@@ -1,4 +1,4 @@
-﻿# UPSPack V2 Product Software and Hardware Usage Guide
+# UPSPack V2 Product Software and Hardware Usage Guide
 
 ![](https://github.com/rcdrones/UPSPACK_V2/wiki/images/ups.JPG)
 
@@ -50,4 +50,3 @@ Enter [Wiki] (https://github.com/rcdrones/upspack_v2/wiki) to learn
 * [EBAY](https://www.ebay.com/itm/UPS-Raspberry-Pi-Lithium-Battery-Expansion-Board-with-3800mAh-Lithium-Battery-/173685870116?_trksid=p2385738.m4383.l4275.c10)
 * [AliExpress](https://www.aliexpress.com/item/UPS-Lithium-Battery-Expansion-Board-with-3800mAh-Lithium-Battery-for-Raspberry-Pi-Durable/32990788550.html)
 * If you will like be partnership with us , contact us via email: rcdrones#163.com (# -> @)
-
