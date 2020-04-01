@@ -10,11 +10,13 @@ The Raspberry Pi is an SBC motherboard that is very similar to desktop Linux com
 UPSPack's on-board battery interface is PH2.0 package. The product provides 3 different capacity batteries for customers to choose from. Customers can also access different capacity by themselves: lithium polymer soft pack battery with standard voltage of 3.7V, or 3.7V 18650 battery pack. Note: The input voltage range of the UPS battery interface must be 4.2V or less. (The implication: all battery packs must be connected in parallel, and cells cannot be connected in series). We built different application combinations and got some battery life data. Provide customers with reference to different battery capacities:
 
 
-Capacity | Pi4 stand-alone | Pi4 with official 7-inch DSI screen | Pi3B + with 3.5-inch GPIO screen | Pi3B + with 5-inch HDMI screen | Pi3B + with 7-inch HDMI screen | Pi3B + with official 7-inch DSI screen |
-| -------- | ------------ | ----------------------- | --- --------------------- | ---------------------- | ----- ----------------- | ------------------------- |
-| 3800mAh | 4.2h | 2.3h | 4.4h | 3.2h | 2.0h | 4.7h |
-| 6500mAh | 7.5h | 4.2h | 7.0h | 5.8h | 3.3h | 7.7h |
-| 10000mAh | 11.6h | 6.5h | 11.6h | 9.0h | 5.8h       |        13.0h             |
+
+| Capacity | Pi4 stand-alone | Pi4 with official 7-inch DSI screen | Pi3B + with 3.5-inch GPIO screen | Pi3B + with 5-inch HDMI screen | Pi3B + with 7-inch HDMI screen | Pi3B + with official 7-inch DSI screen |
+| -------- | --------------- | ----------------------------------- | -------------------------------- | ------------------------------ | ------------------------------ | -------------------------------------- |
+| 3800mAh  | 4.2h            | 2.3h                                | 4.4h                             | 3.2h                           | 2.0h                           | 4.7h                                   |
+| 6500mAh  | 7.5h            | 4.2h                                | 7.0h                             | 5.8h                           | 3.3h                           | 7.7h                                   |
+| 10000mAh | 11.6h           | 6.5h                                | 11.6h                            | 9.0h                           | 5.8h                           | 13.0h                                  |
+
 ### Remarks:
 1. All the above data units are hours.
 2. The running system is: Raspbian Buster with desktop and recommended software Version: July 2019 Release date: 2019-07-10. The system does not make any setting changes.
