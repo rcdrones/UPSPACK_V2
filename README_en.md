@@ -42,8 +42,8 @@ The mechanical aperture and position of UPSPack V2 and Raspberry Pi 4th / 3rd ge
 
 
 ## Product Usage Guide
-! [] (https://github.com/rcdrones/UPSPACK_V2/wiki/images/wire.JPG)
-Enter [Wiki] (https://github.com/rcdrones/upspack_v2/wiki) to learn
+![](https://github.com/rcdrones/UPSPACK_V2/wiki/images/wire.JPG)
+Enter [Wiki](https://github.com/rcdrones/upspack_v2/wiki) to learn
 
 
 ## Partner
